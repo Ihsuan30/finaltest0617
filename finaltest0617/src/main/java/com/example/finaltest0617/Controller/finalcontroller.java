@@ -9,7 +9,7 @@ import java.util.LinkedHashMap;
 @RestController
 public class finalcontroller {
 
-    @GetMapping(value = "/choose/1")
+    @GetMapping(value = "/choose/0")
     public LinkedHashMap<String, Object> choose1() {
 
         LinkedHashMap<String, Object> map = new LinkedHashMap<>();
@@ -17,32 +17,32 @@ public class finalcontroller {
         int random=(int) (Math.random() * 3);
 
         map.put("value",random);
-        map.put("type", "1");
+        map.put("type", "0");
 
         return map;
 
     }
-    @GetMapping(value ="/choose/2")
+    @GetMapping(value ="/choose/1")
     public LinkedHashMap<String, Object> choose2() {
 
         LinkedHashMap<String, Object> map = new LinkedHashMap<>();
 
         int random=(int) (Math.random() * 3);
         map.put("value",random);
-        map.put("type", "2");
+        map.put("type", "1");
 
         return map;
 
     }
 
-    @GetMapping(value ="/choose/3")
+    @GetMapping(value ="/choose/2")
     public LinkedHashMap<String, Object> choose3() {
 
         LinkedHashMap<String, Object> map = new LinkedHashMap<>();
 
         int random=(int) (Math.random() * 3);
         map.put("value",random);
-        map.put("type", "3");
+        map.put("type", "2");
 
         return map;
 
